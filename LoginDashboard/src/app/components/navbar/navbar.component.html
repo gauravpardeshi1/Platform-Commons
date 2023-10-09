@@ -1,0 +1,15 @@
+<div class="navbar">
+    <div>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/explore" routerLinkActive="active">Explore</a>
+    </div>
+    <div>
+        <button *ngIf="!isAuthenticated" [routerLink]="'/login'">
+            Login
+        </button>
+        <button *ngIf="isAuthenticated" (click)="logout()" >
+            Logout
+        </button>
+    </div>
+
+</div>

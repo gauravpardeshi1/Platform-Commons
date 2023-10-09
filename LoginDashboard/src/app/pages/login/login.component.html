@@ -1,0 +1,23 @@
+<div class="login-container">
+
+    <div>
+        <h2>Welcome to the community of <br />volunteers and change <br /> makers of tomorrow</h2>
+
+        <img src="https://img.freepik.com/premium-vector/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.jpg"
+            alt="">
+    </div>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" id="useremail" name="email" [(ngModel)]="formData.email" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" [(ngModel)]="formData.password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+
+    </div>
+</div>

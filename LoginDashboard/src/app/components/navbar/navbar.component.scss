@@ -1,0 +1,51 @@
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+
+    button {
+        background-color: rgb(51, 50, 50);
+        color: aliceblue;
+        padding: 10px 20px;
+
+    }
+
+    a {
+        float: left;
+        display: block;
+        color: rgb(77, 74, 74);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: larger;
+
+        &:hover {
+            color: rgb(57, 216, 110);
+        }
+    }
+
+
+
+    @media screen and (max-width: 600px) {
+        display: block;
+        border: 1px solid red;
+
+        button {
+            background-color: rgb(226, 226, 226);
+            border: none;
+        }
+
+
+        a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+}
